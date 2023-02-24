@@ -1,7 +1,8 @@
+import { Component } from "solid-js";
 import { Title } from "solid-start";
 import Counter from "~/components/Counter";
 
-export default function Home() {
+const Home: Component = () => {
 	return (
 		<main>
 			<Title>Hello World</Title>
@@ -16,4 +17,6 @@ export default function Home() {
 			</p>
 		</main>
 	);
-}
+};
+
+export default Home;
