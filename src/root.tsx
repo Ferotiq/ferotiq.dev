@@ -1,5 +1,5 @@
 // @refresh reload
-import { Suspense } from "solid-js";
+import { Component, Suspense } from "solid-js";
 import {
 	A,
 	Body,
@@ -14,7 +14,7 @@ import {
 } from "solid-start";
 import "./root.scss";
 
-export default function Root() {
+const Root: Component = () => {
 	return (
 		<Html lang="en">
 			<Head>
@@ -36,4 +36,6 @@ export default function Root() {
 			</Body>
 		</Html>
 	);
-}
+};
+
+export default Root;
